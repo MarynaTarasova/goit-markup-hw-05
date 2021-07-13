@@ -54,7 +54,7 @@
         <section class="main-section">
             <div class="container main-section-container">
                 <h1 class="title-main-section">Эффективные решения для вашего бизнеса</h1>
-                <button class="modal-btn" type="button">Заказать услугу</button>
+                <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -112,15 +112,32 @@
             <div class="container activity-container">
                 <h2 class="activity-title">Чем мы занимаемся</h2>
                 <ul class="activity-menu list">
+
                     <li class="activity-menu-item">
-                    <img src="./images/activity/activity-1.jpg" alt="человек пишет код" width="370" height="295">
+                        <div class="activity-box">
+                            <img src="./images/activity/activity-1.jpg" 
+                                alt="человек пишет код" width="370" height="295">
+                            <p class="activity-text">Десктопные приложения</p>
+                        </div>
                     </li>
+
                     <li class="activity-menu-item">
-                        <img src="./images/activity/activity-2.jpg" alt="человек со смартфоном" width="370" height="295">
+                        <div class="activity-box">
+                            <img src="./images/activity/activity-2.jpg" 
+                                alt="человек со смартфоном" width="370" height="295">
+                            <p class="activity-text">Мобильные приложения</p>
+                        </div>
                     </li>
+
                     <li class="activity-menu-item">
-                        <img src="./images/activity/activity-3.jpg" alt="человек с планшетом" width="370" height="295">
+                        <div class="activity-box">
+                            <img src="./images/activity/activity-3.jpg" 
+                                alt="человек с планшетом" width="370" height="295">
+                            <p class="activity-text">Дизайнерские решения</p>
+                        </div>
+                        
                     </li>
+
                 </ul>
             </div>
         </section>
@@ -299,7 +316,7 @@
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link link">
                             <svg class="clients-icon">
-                                <use href="./images/icons.svg#icon-client-1">
+                                <use href="./images/icons.svg#icon-client-1-1">
                                 </use>
                             </svg>
                         </a>
@@ -307,7 +324,7 @@
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link link">
                             <svg class="clients-icon">
-                                <use href="./images/icons.svg#icon-client-2">
+                                <use href="./images/icons.svg#icon-client-2-1">
                                 </use>
                             </svg>
                         </a>
@@ -315,7 +332,7 @@
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link link">
                             <svg class="clients-icon">
-                                <use href="./images/icons.svg#icon-client-3">
+                                <use href="./images/icons.svg#icon-client-3-1">
                                 </use>
                             </svg>
                         </a>
@@ -323,7 +340,7 @@
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link link">
                             <svg class="clients-icon">
-                                <use href="./images/icons.svg#icon-client-4">
+                                <use href="./images/icons.svg#icon-client-4-1">
                                 </use>
                             </svg>
                         </a>
@@ -331,7 +348,7 @@
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link link">
                             <svg class="clients-icon">
-                                <use href="./images/icons.svg#icon-client-5">
+                                <use href="./images/icons.svg#icon-client-5-1">
                                 </use>
                             </svg>
                         </a>
@@ -339,7 +356,7 @@
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link link">
                             <svg class="clients-icon">
-                                <use href="./images/icons.svg#icon-client-6">
+                                <use href="./images/icons.svg#icon-client-6-1">
                                 </use>
                             </svg>
                         </a>
@@ -416,6 +433,19 @@
             </ul>  
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="close-btn-icon">
+                    <use href="./images/icons.svg#icon-close-btn">
+                    </use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 </html>
