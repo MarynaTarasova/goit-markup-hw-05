@@ -483,7 +483,6 @@ modal-btn:focus {
 .clients-list-link:focus {
     border: 1px solid #2196F3;
     cursor: pointer;
-    cursor: pointer;
 }
 
 .clients-icon {
