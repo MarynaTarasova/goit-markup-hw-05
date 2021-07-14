@@ -491,8 +491,8 @@ modal-btn:focus {
     fill: #AFB1B8;
 }
 
-.clients-list-item:hover .clients-icon,
-.clients-list-item:focus .clients-icon {
+.clients-list-link:hover .clients-icon,
+.clients-list-link:focus .clients-icon {
     fill: #2196F3;
     cursor: pointer;
 }
